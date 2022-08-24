@@ -1,0 +1,7 @@
+<div class="container">
+  <h2>Top restaurants</h2>
+  <% @restaurants.each do |restaurant| %>
+    <%= render restaurant %>
+    <%= link_to 'Show  this restaurant', restaurant_path(restaurant), class: 'btn btn-primary'  %>
+  <% end %>
+</div>
